@@ -1,0 +1,15 @@
+menu "project config"
+    config SCL_GPIO_PIN
+        int "Gpio num for I2C SCL"
+        range 0 40
+        default 19
+        help
+            Select the gpio num for I2C SCL bus.
+    
+    config SDA_GPIO_PIN
+        int "Gpio num for I2C SDA"
+        range 0 40
+        default 18
+        help
+            Select the gpio num for I2C SDA bus.
+endmenu
